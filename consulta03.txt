@@ -1,0 +1,4 @@
+SELECT t.idSeccion, COUNT (t.idSeccion) as total
+FROM TipoPostSeccion t
+GROUP BY (t.idSeccion)
+ORDER BY COUNT (t.idSeccion) DESC

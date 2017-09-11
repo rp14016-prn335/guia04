@@ -1,0 +1,4 @@
+///////////////consulta 2 /////////////
+SELECT p.idCategoria.nombre, COUNT(p.idCategoria) as total
+FROM Post p
+GROUP BY (p.idCategoria) DESC

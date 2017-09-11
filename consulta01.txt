@@ -1,0 +1,3 @@
+SELECT DISTINC u.nombres,jp.titulo, jp.fecha, COUNT()
+FROM Usuario u, PostPaso p JOIN p.post jp
+WHERE u.idUsuario = p.idUsuario
